@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+            body {
+                padding: 0px;
+                margin: auto;
+            }
+            a {
+                color: #79BD9A;
+                text-decoration: none;
+                transition: color 0.25s ease;
+            }
+            a:hover {
+                color: #3B8686;
+            }
+            button:focus {
+                outline: none;
+            }
+            .menucontainer {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 17px;
+                color: #79BD9A;
+                line-height: 80px;
+                height: 80px;
+                padding-left:20px;
+                padding-right:30px;
+                background-color: white;
+            }
+            .cvbutton {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 17px;
+                color: #79BD9A;
+                border: solid;
+                border-width: 2.5px;
+                border-color: #79BD9A;
+                border-radius: 10px;
+                padding: 15px;
+                background-color: transparent;
+            }
+            .cvbutton:active {
+                color: white;
+                border-color: #3B8686;
+                background-color: #3B8686;
+            }
+        </style>
+        <script>
+            function linkToCV() {
+                window.open('https://jonathansuryadiputra-cv.s3-eu-west-1.amazonaws.com/CV_JonathanSuryadiputra.pdf', '_blank');
+            }
+        </script>
+    </head>
+    <body>
+        <div class='menucontainer'>
+            <div style='float: left; height: 100%; display: flex; align-items: center;'>
+                <a href='index.html.php'><i class='im im-home' style='font-size: 30px;'></i></a>
+            </div>
+            <div style='float: right;'>
+                <a class='aboutlink' href='about.html.php'>About Me</a>&nbsp
+                <a class='projectslink' href='codeprojects.html.php'>Coding Projects</a>&nbsp
+                <a class='portfoliolink' href='artgallery.html.php'>Artwork Gallery</a>&nbsp
+                <a class='contactlink' href='contact.html.php'>Contact</a>
+                &nbsp&nbsp
+                <button class='cvbutton' id='cvbutton' onclick='linkToCV()'>My CV</button>
+            </div>
+        </div>
+    </body>
+</html>
