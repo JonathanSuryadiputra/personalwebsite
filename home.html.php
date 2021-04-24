@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Jonathan Suryadiputra</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
