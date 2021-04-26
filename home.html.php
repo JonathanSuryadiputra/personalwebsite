@@ -36,6 +36,14 @@
                 width: 100%;
             }
         </style>
+        <script>
+            function detectScreen() {
+                if (screen.width <= 600) {
+                    window.location.replace('underconst.html');
+                }
+            }
+            window.onload = detectScreen();
+        </script>
     </head>
     <body>
         <header>
