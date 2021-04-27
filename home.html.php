@@ -38,7 +38,7 @@
         </style>
         <script>
             function detectScreen() {
-                if (screen.width <= 600) {
+                if (screen.width <= 768) {
                     window.location.replace('underconst.html');
                 }
             }
