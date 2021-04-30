@@ -27,10 +27,6 @@
                 line-height: 0;
                 cursor: default;
             }
-            .background {
-                background: rgb(59,134,134);
-                background: linear-gradient(0deg, rgba(59,134,134,1) 0%, rgba(207,240,158,1) 100%);
-            }
             .textcontainer {
                 text-align: center;
                 width: 100%;
@@ -39,7 +35,7 @@
         <script>
             function detectScreen() {
                 if (screen.width <= 768) {
-                    window.location.replace('underconst.html');
+                    window.location.replace('mobile');
                 }
             }
             window.onload = detectScreen();

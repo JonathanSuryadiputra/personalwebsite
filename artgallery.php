@@ -25,12 +25,8 @@
             a.deviantartlink:hover {
                 color: #072D42;
             }
-            .portfoliolink {
+            .gallerylink {
                 color: #3B8686;
-            }
-            .background {
-                background: rgb(59,134,134);
-                background: linear-gradient(0deg, rgba(59,134,134,1) 0%, rgba(207,240,158,1) 100%);
             }
             .contents {
                 position: relative;
@@ -64,7 +60,7 @@
                 border-radius: 10px;
                 overflow: hidden;
             }
-            .artwork {
+            .thumbnail {
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -85,7 +81,7 @@
             .artworkcard:hover .caption {
                 opacity: 1;
             }
-            .artworkcard:hover .artwork {
+            .artworkcard:hover .thumbnail {
                 opacity: 0.3;
                 filter: blur(10px);
             }
@@ -112,7 +108,7 @@
                                 while ($row = mysqli_fetch_array($queryResult)) {
                                     echo    "<span>
                                                 <div class='artworkcard'>
-                                                    <div class='artwork' style='background-image: url(" .$row['thumbnailLink']. ");'></div>
+                                                    <div class='thumbnail' style='background-image: url(" .$row['thumbnailLink']. ");'></div>
                                                     <div class='caption'>
                                                         <b>" .$row['artworkTitle']. "</b><br>
                                                         Medium: " .$row['artworkMedium']. "<br>

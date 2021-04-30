@@ -50,10 +50,6 @@
             .contactlink {
                 color: #3B8686;
             }
-            .background {
-                background: rgb(59,134,134);
-                background: linear-gradient(0deg, rgba(59,134,134,1) 0%, rgba(207,240,158,1) 100%);
-            }
             .formcontainer {
                 font-family: 'JetBrains Mono', monospace;
                 font-size: 18px;

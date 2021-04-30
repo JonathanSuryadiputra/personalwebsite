@@ -26,10 +26,6 @@
             .projectslink {
                 color: #3B8686;
             }
-            .background {
-                background: rgb(59,134,134);
-                background: linear-gradient(0deg, rgba(59,134,134,1) 0%, rgba(207,240,158,1) 100%);
-            }
             .slideshowcontainer {
                 width: 70%;
                 height: 70%;
@@ -40,7 +36,6 @@
                 position: relative;
                 margin: auto;
             }
-            /* Hide the images by default */
             .slide {
                 background-color: white;
                 color: #0B486B;
@@ -51,7 +46,6 @@
                 border-radius: 10px;
                 display: none;
             }
-            /* Next & previous buttons */
             .prev, .next {
                 cursor: pointer;
                 position: absolute;
@@ -66,17 +60,14 @@
                 border-radius: 0 3px 3px 0;
                 user-select: none;
             }
-            /* Position the 'next button' to the right */
             .next {
                 right: 0;
                 border-radius: 3px 0 0 3px;
             }
-            /* On hover, add a black background color with a little bit see-through */
             .prev:hover, .next:hover {
                 color: #bbb;
                 background-color: rgba(113,113,113,0.8);
             }
-            /* The dots/bullets/indicators */
             .dot {
                 cursor: pointer;
                 height: 10px;
@@ -100,13 +91,11 @@
             <?php include 'db.inc.php'; ?>
             <main>
                 <div class='slideshowcontainer'>
-                    <!-- Slideshow container -->
                     <div class='slideshow'>
                         <?php
                         $sqlString = 'SELECT * FROM project ORDER BY projectId DESC';
                         $queryResult = mysqli_query($connection,$sqlString);
                         $rowCount = 0;
-                        // echo out slides
                         while ($row = mysqli_fetch_array($queryResult)) {
                             echo    "<div class='slide'>
                                         <h1>" .$row['projectTitle']. "</h1>
@@ -120,13 +109,10 @@
                             $rowCount++;
                         }
                         ?>
-                    
-                        <!-- Next and previous buttons -->
                         <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
                         <a class='next' onclick='plusSlides(1)'>&#10095;</a>
                     </div>
                     <br>
-                    <!-- The dots/circles -->
                     <div style='text-align:center'>
                         <?php
                         for ($i = 1; $i <= $rowCount; $i++) {
@@ -139,21 +125,19 @@
                 <script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
-        
-                    // Next/previous controls
+
                     function plusSlides(n) {
                         showSlides(slideIndex += n);
                     }
-        
-                    // Thumbnail image controls
+
                     function currentSlide(n) {
                         showSlides(slideIndex = n);
                     }
         
                     function showSlides(n) {
                         var i;
-                        var slides = document.getElementsByClassName('slide'); // slides are retrieved as an array of divs
-                        var dots = document.getElementsByClassName('dot'); // dots are also an array of the circle-shaped divs
+                        var slides = document.getElementsByClassName('slide');
+                        var dots = document.getElementsByClassName('dot');
                         if (n > slides.length) {
                             slideIndex = 1
                         }
