@@ -99,7 +99,7 @@
 			function showNavPanel() {
 				var navPanel = document.getElementById('navpanel');
 				var navButton = document.getElementById('menubutton');
-				if (navPanel.style.display === 'none') {
+				if (navButton.innerHTML === '<i class="im im-menu"></i>') {
 					navPanel.style.display = 'block';
 					navButton.innerHTML = '<i class="im im-x-mark"></i>';
 				}
@@ -134,6 +134,7 @@
 			<a class='projectslink' href='codeprojects.php'>Coding Projects</a><br>
 			<a class='portfoliolink' href='artgallery.php'>Artwork Gallery</a><br>
 			<a class='contactlink' href='contact.php'>Contact</a><br>
+			<a href='https://jonathansuryadiputra-cv.s3-eu-west-1.amazonaws.com/CV_JonathanSuryadiputra.pdf' target='_blank'>My CV</a>
 		</div>
 	</body>
 </html>

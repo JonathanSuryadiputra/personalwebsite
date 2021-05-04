@@ -38,6 +38,20 @@
                 float: left;
                 width: 60%;
             }
+            .innertextcontainer {
+                border-left: solid;
+                float: left;
+                padding: 50px;
+                width: 575px;
+            }
+            @media only screen and (max-width: 1024px) {
+                .innertextcontainer {
+                    border-left: solid;
+                    float: left;
+                    padding-right: 0px;
+                    width: 525px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -55,8 +69,8 @@
                         </div>
                     </div>
                     <div class='textcontainer'>
-                        <div style='border-left: solid; float: left; padding: 50px; width: 575px;'>
-                            <h3>hello-world!<h3>
+                        <div class='innertextcontainer'>
+                            <h3><b>hello-world!</b></h3>
                             <p>
                                 My name is Jonathan and I am currently a computer science student based in Ireland and I go to the Institute of Technology Carlow. I enjoy designing neat order and control structure of code and I have very high attention when it comes to even the smallest details. I have done one large project on campus and several small personal projects. Aside from programming I also enjoy drawing and painting illustration artworks in my spare time. I’ve built this website from scratch using HTML, JavaScript and PHP and it is hosted on AWS.
                             </p>

@@ -24,9 +24,12 @@
 				width: auto;
 				height: auto;
 				text-align: center;
+				font-family: 'JetBrains Mono', monospace;
+			}
+			.textcontainer h3 {
+				font-size: 20px;
 			}
 			.textcontainer p {
-				font-family: 'JetBrains Mono', monospace;
 				font-size: 16px;
 			}
 			.profilepiccontainer {
@@ -36,6 +39,11 @@
 				justify-content: center;
 				padding-top: 20px;
 			}
+			@media only screen and (min-width: 600px) {
+				.textcontainer h3 {
+					font-size: 32px;
+				}
+			}
 			@media only screen and (min-width: 768px) {
 				main {
 					height: 90%;
@@ -43,19 +51,25 @@
 				img.profilepic {
 					width: 225px;
 				}
+				.textcontainer h3 {
+					font-size: 24px;
+				}
 				.textcontainer p {
 					padding-left: 40px;
 					padding-right: 40px;
-					font-size: 22px;
+					font-size: 18px;
 				}
 				.profilepiccontainer {
 					height: 300px;
 				}
 				@media only screen and (orientation: portrait) {
+					.textcontainer h3 {
+						font-size: 26px;
+					}
 					.textcontainer p {
 						padding-left: 60px;
 						padding-right: 60px;
-						font-size: 23px;
+						font-size: 20px;
 					}
 				}
 			}
@@ -71,6 +85,7 @@
 					<img class='profilepic' src='https://personalwebsite-components.s3-eu-west-1.amazonaws.com/profilepic.jpg' width='200px' style='border-radius: 50%;'>
 				</div>
 				<div class='textcontainer'>
+					<h3><b>hello-world!</b></h3>
 					<p id='aboutmetext'>
 						My name is Jonathan and I am currently a computer science student based in Ireland and I go to the Institute of Technology Carlow. I enjoy designing neat order and control structure of code and I have very high attention when it comes to even the smallest details.<br><br>I have done one large project on campus and several small personal projects. Aside from programming I also enjoy drawing and painting illustration artworks in my spare time. I’ve built this website from scratch using HTML, JavaScript and PHP and it is hosted on AWS.
 					</p>
