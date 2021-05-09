@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>My Artwork Gallery</title>
+        <title>My Artwork Gallery - Jonathan Suryadiputra</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
             body {

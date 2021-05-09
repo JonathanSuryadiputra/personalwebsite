@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>About Me</title>
+        <title>About Me - Jonathan Suryadiputra</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
             body {

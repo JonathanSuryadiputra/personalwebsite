@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>My Coding Projects</title>
+        <title>My Coding Projects - Jonathan Suryadiputra</title>
         <link rel='stylesheet' href='https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css'>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
